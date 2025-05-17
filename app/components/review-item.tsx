@@ -5,12 +5,14 @@ type Props = {
   text: string;
   src: string;
   name: string;
+  className: string;
 };
 
-const ReviewItem = ({ text, name, src }: Props) => {
+const ReviewItem = ({ text, name, src, className }: Props) => {
   return (
     <>
-      <View className="bg-veryDarkMagenta flex flex-col gap-4 rounded-md p-6">
+      <View
+        className={`${className} bg-veryDarkMagenta flex flex-col gap-4 rounded-md p-6 lg:h-fit lg:w-80 lg:p-8`}>
         <View className="flex flex-row gap-4">
           <Image className="size-8 rounded-full object-contain" source={src} />
           <View>
