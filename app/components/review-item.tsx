@@ -1,4 +1,5 @@
-import { Image, Text, View } from 'react-native';
+import { Image } from 'expo-image';
+import { Text, View } from 'react-native';
 
 type Props = {
   text: string;
@@ -9,15 +10,15 @@ type Props = {
 const ReviewItem = ({ text, name, src }: Props) => {
   return (
     <>
-      <View>
-        <View>
-          <Image source={src} />
+      <View className="bg-veryDarkMagenta flex flex-col gap-4 rounded-md p-6">
+        <View className="flex flex-row gap-4">
+          <Image className="size-8 rounded-full object-contain" source={src} />
           <View>
-            <Text>{name}</Text>
-            <Text>Verified Buyer</Text>
+            <Text className="text-white">{name}</Text>
+            <Text className="text-softPink">Verified Buyer</Text>
           </View>
         </View>
-        <Text>{text}</Text>
+        <Text className="whitespace-normal text-white">{text}</Text>
       </View>
     </>
   );

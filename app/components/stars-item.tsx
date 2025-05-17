@@ -9,7 +9,7 @@ type Prop = {
 const StarsItem = ({ text }: Prop) => {
   return (
     <>
-      <View>
+      <View className="bg-lightGrayishMagenta flex items-center gap-2 rounded-lg p-4">
         <View className="flex flex-row gap-1">
           <Image source={stars} />
           <Image source={stars} />
@@ -17,7 +17,7 @@ const StarsItem = ({ text }: Prop) => {
           <Image source={stars} />
           <Image source={stars} />
         </View>
-        <Text>{text}</Text>
+        <Text className="text-veryDarkMagenta font-bold">{text}</Text>
       </View>
     </>
   );

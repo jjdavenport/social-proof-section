@@ -5,10 +5,10 @@ const Footer = () => {
   return (
     <>
       <View>
-        <Text className="flex justify-center gap-1">
+        <Text className="flex justify-center gap-1 text-xs">
           Challenge by
           <Link
-            className="pl-1 underline"
+            className="underline"
             href="https://www.frontendmentor.io?ref=challenge"
             target="_blank">
             Frontend Mentor
