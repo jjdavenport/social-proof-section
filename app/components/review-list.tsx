@@ -19,14 +19,14 @@ const ReviewList = () => {
     Excellent!"`}
         />
         <ReviewItem
-          className="lg:mt-10"
+          className="lg:mt-6"
           src={irene}
           name="Irene Roberts"
           text={`"Customer service is always excellent and very quick turn around. Completely
     delighted with the simplicity of the purchase and the speed of delivery."`}
         />
         <ReviewItem
-          className="lg:mt-20"
+          className="lg:mt-12"
           src={anne}
           name="Anne Wallace"
           text={`"Put an order with this company and can only praise them for the very high
