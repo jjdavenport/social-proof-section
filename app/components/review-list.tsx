@@ -11,6 +11,7 @@ const ReviewList = () => {
     <>
       <View className="flex flex-col gap-2 lg:flex-row lg:gap-4">
         <ReviewItem
+          testID="review-colton"
           className="lg:mt-0"
           src={colton}
           name="Colton Smith"
@@ -19,6 +20,7 @@ const ReviewList = () => {
     Excellent!"`}
         />
         <ReviewItem
+          testID="review-irene"
           className="lg:mt-6"
           src={irene}
           name="Irene Roberts"
@@ -26,6 +28,7 @@ const ReviewList = () => {
     delighted with the simplicity of the purchase and the speed of delivery."`}
         />
         <ReviewItem
+          testID="review-anne"
           className="lg:mt-12"
           src={anne}
           name="Anne Wallace"
