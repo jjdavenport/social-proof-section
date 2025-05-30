@@ -1,4 +1,5 @@
 import '@/global.css';
+import Head from 'expo-router/head';
 import { Image, ScrollView, View } from 'react-native';
 import { useMediaQuery } from 'react-responsive';
 import Content from './components/content';
@@ -12,9 +13,9 @@ export default function HomeScreen() {
   if (desktop) {
     return (
       <>
-        <head>
+        <Head>
           <title>Frontend Mentor | Social proof section</title>
-        </head>
+        </Head>
 
         <ScrollView className="relative">
           <View className="flex h-full min-h-screen items-center font-league text-default">
@@ -44,9 +45,9 @@ export default function HomeScreen() {
 
   return (
     <>
-      <head>
+      <Head>
         <title>Frontend Mentor | Social proof section</title>
-      </head>
+      </Head>
 
       <ScrollView className="relative">
         <View className="flex h-full min-h-screen font-league text-default">
