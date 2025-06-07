@@ -61,7 +61,7 @@ export default function HomeScreen() {
             className="absolute bottom-0 -z-10 w-full"
             source={require('@/assets/images/bg-pattern-bottom-mobile.svg')}
           />
-          <View className="flex flex-1 items-center gap-8 px-6 py-10">
+          <View className="flex flex-1 items-center justify-center gap-8 px-6 py-10">
             <Content />
             <StarsList />
             <ReviewList />

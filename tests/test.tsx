@@ -4,12 +4,12 @@ import StarsItem from '@/app/components/stars-item';
 import { render, screen } from '@testing-library/react-native';
 
 describe('Content', () => {
-  it('checks the heading text', () => {
+  it('checks the heading text is visible', () => {
     render(<Content />);
     expect(screen.queryByText('10,000+ of our users love our products.')).toBeVisible();
   });
 
-  it('checks the paragraph text', () => {
+  it('checks the paragraph text is visible', () => {
     render(<Content />);
     expect(
       screen.queryByText(`
@@ -37,6 +37,14 @@ describe('Stars Item', () => {
 });
 
 describe('Footer', () => {
+  it('checks the links have accessible style', () => {
+    const { getAllByRole } = render(<Footer />);
+    const links = getAllByRole('link');
+    links.forEach((link) => {
+      expect(link.props.className).toContain('underline');
+    });
+  });
+
   it('checks the href of the frontend link', () => {
     const { getByRole } = render(<Footer />);
     const frontendLink = getByRole('link', { name: /frontend mentor/i });
